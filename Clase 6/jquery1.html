@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="assets/js/jquery-3.6.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('p').click(function(){
+                $('p').hide("slow");
+            })
+
+            $('#esconder').click(function(){
+                $('img').hide("slow");
+            })
+
+            $('#mostrar').click(function(){
+                $('img').show("slow");
+            })
+
+            $("#toggle").click(function(){
+                $('img').toggle("slow");
+            })
+
+            $('#slideAbajo').click(function(){
+                $('img').slideDown();
+            })
+
+            $('#slideArriba').click(function(){
+                $('img').slideUp();
+            })
+            $('#fadeIn').click(function(){
+                $('img').fadeIn();
+            })
+            $('#fadeOut').click(function(){
+                $('img').fadeOut();
+            })
+            
+        })
+    </script>
+</head>
+<body>
+    <h2>Efectos Jquery</h2>
+    <p>Este es un párrafo</p>
+    <ul>
+        <li id="esconder">Esconder la imágen (.hide)</li>
+        <li id="mostrar">Mostrar la imágen (.show)</li>
+        <li id="toggle">Mostrar y esconder la imagen (.toggle)</li>
+        <li id="slideAbajo">Mostrar (.slideDown)</li>
+        <li id="slideArriba">Esconder la imagen (.slideUp)</li>
+        <li id="fadeIn">Esconde la imagen (.fadeIn)</li>
+        <li id="fadeOut">Mostrar la imagen (.fadeOut)</li>
+
+    </ul>
+    <img src="assets/img/foto.jpg">
+</body>
+</html>
